@@ -2,7 +2,7 @@ const path = require('path')
 module.exports = {
   version: 1,
   title: "Moore-AnimateAnyone",
-  description: "Unofficial Implementation of Animate Anyone https://github.com/MooreThreads/Moore-AnimateAnyone",
+  description: "[NVIDIA GPU ONLY] Unofficial Implementation of Animate Anyone https://github.com/MooreThreads/Moore-AnimateAnyone",
   icon: "icon.jpeg",
   menu: async (kernel) => {
     let installing = await kernel.running(__dirname, "install.js")
