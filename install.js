@@ -49,31 +49,31 @@ module.exports = {
   {
     "method": "fs.download",
     "params": {
-      "uri": "https://huggingface.co/runwayml/stable-diffusion-v1-5/raw/main/feature_extractor/preprocessor_config.json",
+      "uri": "https://huggingface.co/jcplus/stable-diffusion-v1-5/raw/main/feature_extractor/preprocessor_config.json",
       "dir": "app/pretrained_weights/stable-diffusion-v1-5/feature_extractor",
     }
   }, {
     "method": "fs.download",
     "params": {
-      "uri": "https://huggingface.co/runwayml/stable-diffusion-v1-5/raw/main/model_index.json",
+      "uri": "https://huggingface.co/jcplus/stable-diffusion-v1-5/raw/main/model_index.json",
       "dir": "app/pretrained_weights/stable-diffusion-v1-5",
     }
   }, {
     "method": "fs.download",
     "params": {
-      "uri": "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/unet/diffusion_pytorch_model.bin?download=true",
+      "uri": "https://huggingface.co/jcplus/stable-diffusion-v1-5/resolve/main/unet/diffusion_pytorch_model.bin?download=true",
       "dir": "app/pretrained_weights/stable-diffusion-v1-5/unet",
     }
   }, {
     "method": "fs.download",
     "params": {
-      "uri": "https://huggingface.co/runwayml/stable-diffusion-v1-5/raw/main/unet/config.json",
+      "uri": "https://huggingface.co/jcplus/stable-diffusion-v1-5/raw/main/unet/config.json",
       "dir": "app/pretrained_weights/stable-diffusion-v1-5/unet",
     }
   }, {
     "method": "fs.download",
     "params": {
-      "uri": "https://huggingface.co/runwayml/stable-diffusion-v1-5/raw/main/v1-inference.yaml",
+      "uri": "https://huggingface.co/jcplus/stable-diffusion-v1-5/raw/main/v1-inference.yaml",
       "dir": "app/pretrained_weights/stable-diffusion-v1-5",
     }
   },
