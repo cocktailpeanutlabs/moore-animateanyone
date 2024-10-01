@@ -49,32 +49,32 @@ module.exports = {
   {
     "method": "fs.download",
     "params": {
-      "uri": "https://huggingface.co/runwayml/stable-diffusion-v1-5/raw/main/feature_extractor/preprocessor_config.json",
-      "dir": "app/pretrained_weights/stable-diffusion-v1-5/feature_extractor",
+      "uri": "https://huggingface.co/cocktailpeanut/stable-diffusion-v1-5/raw/main/feature_extractor/preprocessor_config.json",
+      "path": "app/pretrained_weights/stable-diffusion-v1-5/feature_extractor/preprocessor_config.json",
     }
   }, {
     "method": "fs.download",
     "params": {
-      "uri": "https://huggingface.co/runwayml/stable-diffusion-v1-5/raw/main/model_index.json",
-      "dir": "app/pretrained_weights/stable-diffusion-v1-5",
+      "uri": "https://huggingface.co/cocktailpeanut/stable-diffusion-v1-5/raw/main/model_index.json",
+      "path": "app/pretrained_weights/stable-diffusion-v1-5/model_index.json",
     }
   }, {
     "method": "fs.download",
     "params": {
-      "uri": "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/unet/diffusion_pytorch_model.bin?download=true",
+      "uri": "https://huggingface.co/cocktailpeanut/stable-diffusion-v1-5/resolve/main/unet/diffusion_pytorch_model.bin?download=true",
       "dir": "app/pretrained_weights/stable-diffusion-v1-5/unet",
     }
   }, {
     "method": "fs.download",
     "params": {
-      "uri": "https://huggingface.co/runwayml/stable-diffusion-v1-5/raw/main/unet/config.json",
-      "dir": "app/pretrained_weights/stable-diffusion-v1-5/unet",
+      "uri": "https://huggingface.co/cocktailpeanut/stable-diffusion-v1-5/raw/main/unet/config.json",
+      "path": "app/pretrained_weights/stable-diffusion-v1-5/unet/config.json",
     }
   }, {
     "method": "fs.download",
     "params": {
-      "uri": "https://huggingface.co/runwayml/stable-diffusion-v1-5/raw/main/v1-inference.yaml",
-      "dir": "app/pretrained_weights/stable-diffusion-v1-5",
+      "uri": "https://huggingface.co/cocktailpeanut/stable-diffusion-v1-5/raw/main/v1-inference.yaml",
+      "path": "app/pretrained_weights/stable-diffusion-v1-5/v1-inference.yaml",
     }
   },
   // vae
@@ -82,7 +82,7 @@ module.exports = {
     "method": "fs.download",
     "params": {
       "uri": "https://huggingface.co/stabilityai/sd-vae-ft-mse/raw/main/config.json",
-      "dir": "app/pretrained_weights/sd-vae-ft-mse",
+      "path": "app/pretrained_weights/sd-vae-ft-mse/config.json",
     }
   },
   {
@@ -112,7 +112,7 @@ module.exports = {
     "method": "fs.download",
     "params": {
       "uri": "https://huggingface.co/lambdalabs/sd-image-variations-diffusers/raw/main/image_encoder/config.json",
-      "dir": "app/pretrained_weights/image_encoder",
+      "path": "app/pretrained_weights/image_encoder/config.json",
     }
   },
 
