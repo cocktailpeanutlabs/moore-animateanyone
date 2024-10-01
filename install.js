@@ -82,7 +82,7 @@ module.exports = {
     "method": "fs.download",
     "params": {
       "uri": "https://huggingface.co/stabilityai/sd-vae-ft-mse/raw/main/config.json",
-      "dir": "app/pretrained_weights/sd-vae-ft-mse",
+      "path": "app/pretrained_weights/sd-vae-ft-mse/config.json",
     }
   },
   {
@@ -112,7 +112,7 @@ module.exports = {
     "method": "fs.download",
     "params": {
       "uri": "https://huggingface.co/lambdalabs/sd-image-variations-diffusers/raw/main/image_encoder/config.json",
-      "dir": "app/pretrained_weights/image_encoder",
+      "path": "app/pretrained_weights/image_encoder/config.json",
     }
   },
 
