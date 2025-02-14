@@ -15,6 +15,19 @@ module.exports = {
       "message": "git clone https://github.com/cocktailpeanut/Moore-AnimateAnyone app"
     }
   },
+  {
+    "method": "shell.run",
+    "params": {
+      "path": "app",
+      "venv": "env",
+      "message": [
+        "{{(gpu === 'nvidia' ? self.cmds.nvidia : (gpu === 'amd' ? self.cmds.amd : self.cmds.default))}}",
+        "pip install {{platform === 'darwin' ? 'eva-decord' : 'decord'}}",
+        "python -m pip install pip==24.0",
+        "pip install -r requirements.txt"
+      ]
+    }
+  },
   // AA
   {
     "method": "fs.download",
@@ -131,19 +144,7 @@ module.exports = {
       "dir": "app/pretrained_weights/DWPose",
     }
   },
-
   {
-    "method": "shell.run",
-    "params": {
-      "path": "app",
-      "venv": "env",
-      "message": [
-        "{{(gpu === 'nvidia' ? self.cmds.nvidia : (gpu === 'amd' ? self.cmds.amd : self.cmds.default))}}",
-        "pip install {{platform === 'darwin' ? 'eva-decord' : 'decord'}}",
-        "pip install -r requirements.txt"
-      ]
-    }
-  }, {
     "method": "notify",
     "params": {
       "html": "Click the 'start' tab to get started!"
