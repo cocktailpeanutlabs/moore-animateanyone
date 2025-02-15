@@ -1,8 +1,8 @@
 module.exports = {
   "cmds": {
-    "nvidia": "pip install torch torchvision torchaudio xformers --index-url https://download.pytorch.org/whl/cu118",
-    "amd": "pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm5.6",
-    "default": "pip install torch torchvision torchaudio"
+    "nvidia": "pip torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0 xformers --index-url https://download.pytorch.org/whl/cu124",
+    "amd": "pip torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0 --index-url https://download.pytorch.org/whl/rocm6.2",
+    "default": "pip torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0"
   },
   "requires": [{
     "type": "conda",
@@ -13,6 +13,19 @@ module.exports = {
     "method": "shell.run",
     "params": {
       "message": "git clone https://github.com/cocktailpeanut/Moore-AnimateAnyone app"
+    }
+  },
+  {
+    "method": "shell.run",
+    "params": {
+      "path": "app",
+      "venv": "env",
+      "message": [
+        "{{(gpu === 'nvidia' ? self.cmds.nvidia : (gpu === 'amd' ? self.cmds.amd : self.cmds.default))}}",
+        "pip install {{platform === 'darwin' ? 'eva-decord' : 'decord'}}",
+        "python -m pip install pip==24.0",
+        "pip install -r requirements.txt"
+      ]
     }
   },
   // AA
@@ -131,19 +144,7 @@ module.exports = {
       "dir": "app/pretrained_weights/DWPose",
     }
   },
-
   {
-    "method": "shell.run",
-    "params": {
-      "path": "app",
-      "venv": "env",
-      "message": [
-        "{{(gpu === 'nvidia' ? self.cmds.nvidia : (gpu === 'amd' ? self.cmds.amd : self.cmds.default))}}",
-        "pip install {{platform === 'darwin' ? 'eva-decord' : 'decord'}}",
-        "pip install -r requirements.txt"
-      ]
-    }
-  }, {
     "method": "notify",
     "params": {
       "html": "Click the 'start' tab to get started!"
