@@ -1,8 +1,8 @@
 module.exports = {
   "cmds": {
-    "nvidia": "pip torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0 xformers --index-url https://download.pytorch.org/whl/cu124",
-    "amd": "pip torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0 --index-url https://download.pytorch.org/whl/rocm6.2",
-    "default": "pip torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0"
+    "nvidia": "pip install torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0 xformers --index-url https://download.pytorch.org/whl/cu124",
+    "amd": "pip install torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0 --index-url https://download.pytorch.org/whl/rocm6.2",
+    "default": "pip install torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0"
   },
   "requires": [{
     "type": "conda",
