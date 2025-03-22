@@ -1,6 +1,6 @@
 const path = require('path')
 module.exports = {
-  version: 1,
+  version: "3.0",
   title: "Moore-AnimateAnyone",
   description: "[NVIDIA GPU ONLY] Unofficial Implementation of Animate Anyone https://github.com/MooreThreads/Moore-AnimateAnyone",
   icon: "icon.jpeg",
